@@ -1,6 +1,7 @@
 /* Include the padding and border in an element's total width and height */
 * {
     box-sizing: border-box;
+    margin: 10px;
 }
 
 /* Remove margins and padding from the list */
@@ -17,6 +18,7 @@ ul li {
     background: #eee;
     font-size: 18px;
     transition: 0.2s;
+    list-style-type: none;
 
     /* make the list items unselectable */
     -webkit-user-select: none;
@@ -61,7 +63,7 @@ ul li.checked::before {
     position: absolute;
     right: 0;
     top: 0;
-    padding: 12px 16px 12px 16px
+    padding: 12px 16px px 16px
 }
 
 .close:hover {
@@ -104,6 +106,7 @@ input {
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 }
 
 .addBtn:hover {
